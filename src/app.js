@@ -10,6 +10,7 @@ console.log(__dirname)//E:\Abinaya\NodeJS\web-server\src
 console.log(path.join(__dirname,"../public"))//E:\Abinaya\NodeJS\web-server\public. ".."goes up one folder
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //Define path for Express
 const publicDirectoryPath = path.join(__dirname,"../public")
@@ -102,6 +103,6 @@ app.get("*",(req,res)=>{
 
 
 //Set up the server
-app.listen(3000,()=>{
-    console.log("server is up and running at 3000!")
+app.listen(port,()=>{
+    console.log("server is up and running at" + port+"!")
 })
