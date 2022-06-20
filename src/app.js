@@ -104,5 +104,5 @@ app.get("*",(req,res)=>{
 
 //Set up the server
 app.listen(port,()=>{
-    console.log("server is up and running at" + port+"!")
+    console.log("server is up and running at " + port+"!")
 })
